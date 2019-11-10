@@ -1,3 +1,62 @@
+body {
+  background-image: url("./assets/images/bg.jpg");
+  background-color: #09d3ac;
+  background-size: 100%;
+  /* background-repeat: cover; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  /* background-size: 100%; */
+}
+
+.fala {
+  margin-top: 4%;
+  width: 40%;
+}
+
+.btn-next {
+  margin: auto;
+  margin-top: -4%;
+  width: 74px;
+  height: 58px;
+  background-image: url("./assets/images/btnnext.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-next:active {
+  background-image: url("./assets/images/btnnext_hover.png");
+}
+
+.btn-next-gamb {
+  margin: auto;
+  margin-top: 3.52%;
+  width: 74px;
+  height: 58px;
+  background-image: url("./assets/images/btnjogar.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-next-gamb:active {
+  background-image: url("./assets/images/btnjogar_hover.png");
+}
+
+.personagem-idle-img {
+  width: 20vw;
+  margin-left: 95%;
+  margin-top: 20%;
+  /*  */
+}
+
+.personagem-idle {
+  position: absolute;
+  top: 55%;
+  /* left: -20%; */
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +78,209 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.display-numeros-grid {
+  display: grid;
+  margin-top: -23%;
+  grid-template-areas:
+    "numeros- numeros-1 numeros-2 numeros-3 numeros-4"
+    "numeros-5 numeros-6 numeros-7 numeros-8 numeros-9";
+  grid-template-columns: repeat(5, 5vw);
+  justify-content: center;
+}
+
+.numeros-0 {
+  grid-area: "numeros-0";
+  background-image: url("./assets/images/0.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-0-hover {
+  grid-area: "numeros-1";
+  background-image: url("./assets/images/0_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-1 {
+  grid-area: "numeros-1";
+  background-image: url("./assets/images/1.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-1-hover {
+  grid-area: "numeros-1";
+  background-image: url("./assets/images/1_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-2 {
+  grid-area: "numeros-2";
+  background-image: url("./assets/images/2.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-2-hover {
+  grid-area: "numeros-2";
+  background-image: url("./assets/images/2_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-3 {
+  grid-area: "numeros-3";
+  background-image: url("./assets/images/3.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-3-hover {
+  grid-area: "numeros-3";
+  background-image: url("./assets/images/3_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-4 {
+  grid-area: "numeros-4";
+  background-image: url("./assets/images/4.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-4-hover {
+  grid-area: "numeros-4";
+  background-image: url("./assets/images/4_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-5 {
+  grid-area: "numeros-5";
+  background-image: url("./assets/images/5.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-5-hover {
+  grid-area: "numeros-5";
+  background-image: url("./assets/images/5_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-6 {
+  grid-area: "numeros-6";
+  background-image: url("./assets/images/6.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-6-hover {
+  grid-area: "numeros-6";
+  background-image: url("./assets/images/6_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-7 {
+  grid-area: "numeros-7";
+  background-image: url("./assets/images/7.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-7-hover {
+  grid-area: "numeros-7";
+  background-image: url("./assets/images/7_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-8 {
+  grid-area: "numeros-8";
+  background-image: url("./assets/images/8.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-8-hover {
+  grid-area: "numeros-7";
+  background-image: url("./assets/images/8_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-9 {
+  grid-area: "numeros-9";
+  background-image: url("./assets/images/9.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.numeros-9-hover {
+  grid-area: "numeros-7";
+  background-image: url("./assets/images/9_hover.png");
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.chao {
+  height: 49px;
+  background-image: url("./assets/images/chao.png");
+  background-repeat: repeat-x;
+  margin-top: 1%;
+}
+
+.chao2 {
+  height: 49px;
+  background-image: url("./assets/images/chao.png");
+  background-repeat: repeat-x;
+  margin-top: 6%;
+}
+
+.hidden {
+  display: "none";
+}
+
+.obstaculo {
+  height: 77px;
+  width: 77px;
+  margin-left: 100%;
+  margin-top: 16%;
+  background-image: url("./assets/images/obstaculo.png");
+}
+
+.numero {
+  height: 77px;
+  width: 77px;
+  margin-left: 100%;
+  margin-top: -50%;
+  background-image: url("./assets/images/0.png");
+  background-size: 100%;
 }
