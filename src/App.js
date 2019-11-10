@@ -36,7 +36,7 @@ import img8Lit from './assets/images/8_hover.png';
 import img9Lit from './assets/images/9_hover.png';
 
 let aux = 0;
-
+let numAux = 0;
 
 function App() {
 
@@ -68,7 +68,7 @@ function App() {
   
 
 
-  let numAux = 0;
+  
 
   const pegaDados = (dados) => {
     setTeste(dados)
@@ -90,11 +90,13 @@ function App() {
 
   useEffect(() => {
     let numero = document.getElementById("num");
+    let obs = document.getElementById("obs");
     if(numero && numero.style.marginLeft == "44%"){
       if(teste.indexOf(achar[numAux][0])!=-1 || teste.indexOf(achar[numAux][1])!=-1){
-        console.log("acertoou1");
+        
         numero.style.backgroundImage = "url("+bgnumcol[numAux]+")";
         numAux++;
+        console.log("acertoou1 ", numAux);
       }
     }
   }, [teste])
@@ -105,6 +107,10 @@ function App() {
     if(numero)
       numero.style.marginLeft = "44%";
     //console.log("teste", teste);
+
+    /*if(point == 40){
+      numero.style.backgroundImage = "url("+bgnumcol[num]+")";
+    }*/
 
     if(point == 35){
       let perso = document.getElementById("personagem");
@@ -146,7 +152,6 @@ function App() {
       console.log(tempo)
       setTimeout(() => {  
         sorteiaObstaculo(num+1);
-        numAux = num+1;
         spawnaObstaculo(100, num);
       }, tempo);
     

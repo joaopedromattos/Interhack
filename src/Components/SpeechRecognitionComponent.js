@@ -35,8 +35,9 @@ const Dictaphone = ({
         
         
         //resetTranscript()
+        getTranscript(finalTranscript)
     }
-    getTranscript(finalTranscript)
+    
   }, [finalTranscript])
 
   
